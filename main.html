@@ -1,70 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Playlist</title>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+	    
+    <h1>My Playlist</h1>
 
-    <!-- Heading 1: My Playlist -->
-    <h1 style="text-align: center;">My Playlist</h1>
+    <h2>Now Playing...</h2>
 
-    <!-- Heading 2: Now Playing -->
-    <h2 style="text-align: center;">Now Playing...</h2>
-
-    <!-- Heading 2: MP3 Songs -->
-    <h2 style="text-align: center;">MP3 Songs</h2>
-
-    <!-- Song Playlist -->
-    <div>
-        <ul>
-            <li style="list-style-type: none;">
-                <a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank" style="text-decoration-line: none;">
-                    Song 1 - MP3 Track 1
-                </a>
-            </li>
-            <li style="list-style-type: none;">
-                <a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank" style="text-decoration-line: none;">
-                    Song 2 - MP3 Track 2
-                </a>
-            </li>
-            <li style="list-style-type: none;">
-                <a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank" style="text-decoration-line: none;">
-                    Song 3 - MP3 Track 3
-                </a>
-            </li>
-            <li style="list-style-type: none;">
-                <a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank" style="text-decoration-line: none;">
-                    Song 4 - MP3 Track 4
-                </a>
-            </li>
-            <li style="list-style-type: none;">
-                <a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank" style="text-decoration-line: none;">
-                    Song 5 - MP3 Track 5
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Video Player -->
     <div class="player_one">
-        <h3 style="text-align: center;">Video Player</h3>
         <video controls>
             <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    <!-- Audio Player -->
+    <h2>MP3 songs</h2>
+
     <div class="player_two">
-        <h3 style="text-align: center;">Audio Player</h3>
         <audio controls>
-            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp3">
-            Your browser does not support the audio element.
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio tag.
         </audio>
     </div>
 
+    <ul>
+        <li><a href="https://www.example.com/song1" target="_blank">Song 1</a></li>
+        <li><a href="https://www.example.com/song2" target="_blank">Song 2</a></li>
+        <li><a href="https://www.example.com/song3" target="_blank">Song 3</a></li>
+        <li><a href="https://www.example.com/song4" target="_blank">Song 4</a></li>
+        <li><a href="https://www.example.com/song5" target="_blank">Song 5</a></li>
+    </ul>
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
+
+
+ body {
+            background-color: rgb(204, 204, 204);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+        a {
+            text-decoration-line: none;
+            color: #000;
+        }
